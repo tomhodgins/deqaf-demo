@@ -1,0 +1,474 @@
+body style {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0 2em 0;
+  border-radius: 3px;
+  font-size: 12pt;
+  font-family: monospace;
+  word-break: break-word;
+  white-space: pre-wrap;
+  font-kerning: auto;
+  color: rgba(0,0,0,.7);
+  background: transparent;
+  border: 1px solid rgba(0,0,0,.3);
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+body {
+  margin: 1em;
+  font-family: sans-serif;
+}
+
+[data-button] {
+  display: block;
+  margin: 1em 0;
+}
+
+div {
+  display: inline-block;
+  border-radius: .2em;
+  padding: 1.5em;
+  color: #555;
+  font-size: 12pt;
+  line-height: 1.4;
+  background: #eee;
+  border: 4px solid #ccc;
+}
+
+input,
+textarea {
+  display: block;
+  min-width: 250px;
+  border-radius: .2em;
+  margin: 1em;
+  padding: .5em;
+  color: #555;
+  font-size: 12pt;
+  background: white;
+  border: 4px solid #ccc;
+}
+
+section {
+  height: 300px;
+  display: inline-block;
+  border: 4px dotted lightskyblue;
+  padding: 1em;
+}
+
+img {
+  max-width: 50px;
+  box-shadow: rgba(0,0,0,.1) 0 .2em .5em;
+}
+
+img + img {
+  margin-left: 1em;
+}
+
+p {
+  font-size: 10pt;
+  color: #555;
+}
+
+[class*=-scroll-x] {
+  overflow-x: scroll;
+}
+
+[class*=-scroll-x] p {
+  width: 200%;
+}
+
+[class*=-scroll-y] {
+  height: 100px;
+  overflow-y: scroll;
+}
+
+[data-drag] {
+  overflow: auto;
+}
+
+[data-drag=horizontal] {
+  resize: horizontal;
+}
+
+[data-drag=vertical] {
+  resize: vertical;
+}
+
+[data-drag=both] {
+  resize: both;
+}
+
+/* Min-width */
+.minwidth[--element='{"minWidth": 300}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".minwidth", {"minWidth": 300}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-width */
+.maxwidth[--element='{"maxWidth": 300}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxwidth", {"maxWidth": 300}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-height */
+.minheight[--element='{"minHeight": 200}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".minheight", {"minHeight": 200}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-height */
+.maxheight[--element='{"maxHeight": 200}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxheight", {"maxHeight": 200}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-characters on block elements */
+.mincharacters[--element='{"minCharacters": 35}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".mincharacters", {"minCharacters": 35}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-characters on input */
+.mincharacters-input[--element='{"minCharacters": 35}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".mincharacters-input", {"minCharacters": 35}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-characters on textarea */
+.mincharacters-textarea[--element='{"minCharacters": 35}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".mincharacters-textarea", {"minCharacters": 35}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Characters on block elements */
+.characters[--element='{"characters": 5}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".characters", {"characters": 5}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Characters on input */
+.characters-input[--element='{"characters": 5}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".characters-input", {"characters": 5}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Characters on textarea */
+.characters-textarea[--element='{"characters": 5}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".characters-textarea", {"characters": 5}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-characters */
+.maxcharacters[--element='{"maxCharacters": 35}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxcharacters", {"maxCharacters": 35}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-characters on input */
+.maxcharacters-input[--element='{"maxCharacters": 35}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxcharacters-input", {"maxCharacters": 35}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-characters on textarea */
+.maxcharacters-textarea[--element='{"maxCharacters": 35}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxcharacters-textarea", {"maxCharacters": 35}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-children */
+.minchildren[--element='{"minChildren": 5}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".minchildren", {"minChildren": 5}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Children */
+.children[--element='{"totalChildren": 5}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".children", {"totalChildren": 5}) {
+  [--options] {
+    --selector: window;
+    --events: ['load', 'resize', 'input', 'click', 'mouseup'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-children */
+.maxchildren[--element='{"maxChildren": 5}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxchildren", {"maxChildren": 5}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-scroll-y */
+.min-scroll-y[--element='{"minScrollY": 50}'] {
+  --selector: window;
+  --events: ['load'];
+  border-color: limegreen;
+}
+
+.min-scroll-y[--element='{"minScrollY": 50}'] {
+  --selector: '.min-scroll-y';
+  --events: ['scroll'];
+  border-color: limegreen;
+}
+
+@supports --element(".min-scroll-y", {"minScrollY": 50}) {
+  [--options]{
+    --selector: window;
+    --events: ['load'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+@supports --element(".min-scroll-y", {"minScrollY": 50}) {
+  [--options] {
+    --selector: '.min-scroll-y';
+    --events: ['scroll'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-scroll-y */
+.max-scroll-y[--element='{"maxScrollY": 50}'] {
+  --selector: window;
+  --events: ['load'];
+  border-color: limegreen;
+}
+
+.max-scroll-y[--element='{"maxScrollY": 50}'] {
+  --selector: '.max-scroll-y';
+  --events: ['scroll'];
+  border-color: limegreen;
+}
+
+@supports --element(".max-scroll-y", {"maxScrollY": 50}) {
+  [--options] {
+    --selector: window;
+    --events: ['load'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+@supports --element(".max-scroll-y", {"maxScrollY": 50}) {
+  [--options] {
+    --selector: '.max-scroll-y';
+    --events: ['scroll'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-scroll-x */
+.min-scroll-x[--element='{"minScrollX": 50}'] {
+  --selector: window;
+  --events: ['load'];
+  border-color: limegreen;
+}
+
+.min-scroll-x[--element='{"minScrollX": 50}'] {
+  --selector: '.min-scroll-x';
+  --events: ['scroll'];
+  border-color: limegreen;
+}
+
+@supports --element(".min-scroll-x", {"minScrollX": 50}) {
+  [--options] {
+    --selector: window;
+    --events: ['load'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+@supports --element(".min-scroll-x", {"minScrollX": 50}) {
+  [--options] {
+    --selector: '.min-scroll-x';
+    --events: ['scroll'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-scroll-x */
+.max-scroll-x[--element='{"maxScrollX": 50}'] {
+  --selector: window;
+  --events: ['load'];
+  border-color: limegreen;
+}
+
+.max-scroll-x[--element='{"maxScrollX": 50}'] {
+  --selector: '.max-scroll-x';
+  --events: ['scroll'];
+  border-color: limegreen;
+}
+
+@supports --element(".max-scroll-x", {"maxScrollX": 50}) {
+  [--options] {
+    --selector: window;
+    --events: ['load'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+@supports --element(".max-scroll-x", {"maxScrollX": 50}) {
+  [--options] {
+    --selector: '.max-scroll-x';
+    --events: ['scroll'];
+  }
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Square Orientation */
+.square[--element='{"orientation": "square"}'] {
+  border-color: darkorchid;
+}
+
+@supports --element(".square", {"orientation": "square"}) {
+  [--self] {
+    background: orchid;
+  }
+}
+
+/* Portrait Orientation */
+.portrait[--element='{"orientation": "portrait"}'] {
+  border-color: teal;
+}
+
+@supports --element(".portrait", {"orientation": "portrait"}) {
+  [--self] {
+    background: darkturquoise;
+  }
+}
+
+/* Landscape Orientation */
+.landscape[--element='{"orientation": "landscape"}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".landscape", {"orientation": "landscape"}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Min-aspect ratio */
+.minaspectratio[--element='{"minAspectRatio": 1.777}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".minaspectratio", {"minAspectRatio": 1.777}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
+
+/* Max-aspect-ratio */
+.maxaspectratio[--element='{"maxAspectRatio": 1.777}'] {
+  border-color: limegreen;
+}
+
+@supports --element(".maxaspectratio", {"maxAspectRatio": 1.777}) {
+  [--self] {
+    background: greenyellow;
+  }
+}
