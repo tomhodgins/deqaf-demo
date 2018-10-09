@@ -12,9 +12,9 @@ This is a basic element query demo created from one HTML file and one CSS styles
 
 ### Input
 
-- Input CSS stylesheet: [src/stylesheet.css](dist/stylesheet.css)
-- JavaScript config: [index.html](index.html)
+- Input CSS stylesheet: [stylesheet.css](src/stylesheet.css)
+- JavaScript config: [index.html](dist/index.html#L117&L124)
 
 ### Live Demo
 
-- HTML test page: [tomhodgins.github.io/qaffeine-demo/dist/](https://tomhodgins.github.io/deqaf-demo/dist/)
+- HTML test page: [tomhodgins.github.io/qaffeine-demo/dist/](https://tomhodgins.github.io/deqaf-demo/dist/index.html)
