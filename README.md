@@ -17,4 +17,4 @@ This is a basic element query demo created from one HTML file and one CSS styles
 
 ### Live Demo
 
-- HTML test page: [tomhodgins.github.io/qaffeine-demo/dist/](https://tomhodgins.github.io/deqaf-demo/dist/index.html)
+- HTML test page: [tomhodgins.github.io/deqaf-demo/dist/](https://tomhodgins.github.io/deqaf-demo/dist/index.html)
