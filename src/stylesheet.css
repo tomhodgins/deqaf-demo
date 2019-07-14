@@ -9,9 +9,9 @@ body style {
   word-break: break-word;
   white-space: pre-wrap;
   font-kerning: auto;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, .7);
   background: transparent;
-  border: 1px solid rgba(0,0,0,.3);
+  border: 1px solid rgba(0, 0, 0, .3);
 }
 
 * {
@@ -65,7 +65,7 @@ section {
 
 img {
   max-width: 50px;
-  box-shadow: rgba(0,0,0,.1) 0 .2em .5em;
+  box-shadow: rgba(0, 0, 0, .1) 0 .2em .5em;
 }
 
 img + img {
@@ -270,6 +270,7 @@ p {
     --selector: window;
     --events: ["load", "resize", "input", "click", "mouseup"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -300,10 +301,11 @@ p {
 }
 
 @supports (--element(".min-scroll-y", {"minScrollY": 50})) {
-  [--options]{
+  [--options] {
     --selector: window;
     --events: ["load"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -314,6 +316,7 @@ p {
     --selector: ".min-scroll-y";
     --events: ["scroll"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -337,6 +340,7 @@ p {
     --selector: window;
     --events: ["load"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -347,6 +351,7 @@ p {
     --selector: ".max-scroll-y";
     --events: ["scroll"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -370,6 +375,7 @@ p {
     --selector: window;
     --events: ["load"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -380,6 +386,7 @@ p {
     --selector: ".min-scroll-x";
     --events: ["scroll"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -403,6 +410,7 @@ p {
     --selector: window;
     --events: ["load"];
   }
+
   [--self] {
     background: greenyellow;
   }
@@ -413,6 +421,7 @@ p {
     --selector: ".max-scroll-x";
     --events: ["scroll"];
   }
+
   [--self] {
     background: greenyellow;
   }
